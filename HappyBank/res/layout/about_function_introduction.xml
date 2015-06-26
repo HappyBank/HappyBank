@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="?attr/backgoundColor">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/titleBarHeight"
+        android:background="@drawable/setting_titlebar"
+        android:gravity="center_vertical" 
+        >  
+        
+        <ImageButton
+          android:id="@+id/title_btn"
+          android:layout_width="67dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_marginRight="5dp"
+          android:background="@null"
+          android:src="@drawable/setting_back" />
+         
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="功能介绍"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />  
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        
+       <ImageView 
+            android:layout_width="fill_parent"
+        	android:layout_height="match_parent"
+        	android:src="@drawable/about_function_introduction"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="?attr/backgoundColor">
+
+   <LinearLayout
+        android:id="@+id/main_tab_banner"
+        android:layout_width="fill_parent"
+         android:layout_height="?attr/titleBarHeight"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/setting_titlebar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip" >
+
+        <Button
+            android:id="@+id/soup_bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4F94CD"
+            android:text="返回" />
+
+        <Button
+            android:id="@+id/soup_btn_getsoup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:background="#4F94CD"
+            android:text="获得" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/soup_tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/main_tab"
+        android:layout_below="@id/main_tab_banner"
+        android:orientation="horizontal" >
+
+        <!-- ListView控件 -->
+
+        <ListView
+            android:id="@+id/soupinfo_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>
