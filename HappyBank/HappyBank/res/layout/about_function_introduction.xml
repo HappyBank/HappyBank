@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="?attr/backgoundColor">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/titleBarHeight"
+        android:background="@drawable/setting_titlebar"
+        android:gravity="center_vertical" 
+        >  
+        
+        <LinearLayout
+        android:id="@+id/title_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <ImageButton
+          android:layout_width="20dip"
+          android:layout_height="25dip"
+          android:scaleType="fitXY"
+          android:paddingLeft="10dip"
+          android:background="@null"
+          android:src="@drawable/setting_back" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="20sp" /> 
+   	</LinearLayout>
+         
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="功能介绍"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />  
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        
+       <ImageView 
+            android:layout_width="fill_parent"
+        	android:layout_height="match_parent"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/about_function_introduction"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     >
+
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		
+        <ViewFlipper
+         android:id="@+id/flipper"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent">
+    </ViewFlipper>
+        
+</LinearLayout>
+     
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" 
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:paddingBottom="80px">
+		
+	<Button
+	    android:id="@+id/firstuse_continue"
+		android:layout_width="100dip"
+		android:layout_height="50dip"
+		android:focusable="false" 
+		android:background="@drawable/bg_welcome_btn"
+		android:textColor="#ffffff"
+		android:text="立即体验"/>
+	</LinearLayout>
+     
+ </RelativeLayout>

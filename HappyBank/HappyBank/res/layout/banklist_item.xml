@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="90dip" 
+    android:background="?attr/backgoundColor">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    
+    <RelativeLayout 
+        android:layout_height="90dip"
+        android:layout_width="90dip"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView 
+            android:id="@+id/bankinfo_num_of_deposit"
+            android:gravity="center"
+            android:layout_height="75dip"
+            android:layout_width="80dip"
+            android:textColor="?attr/bankTextColor"
+            android:textSize="30sp"
+            android:text="100"
+            />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+ 		
+        <TextView
+   			android:layout_width="match_parent"  
+   			android:layout_height="wrap_content" 
+   			android:layout_marginLeft="5dip"
+   			android:layout_marginRight="5dip"
+   			android:layout_marginTop="10dip"
+   			android:layout_marginBottom="5dip"
+   			android:id="@+id/bankinfo_name"  
+   			android:text="bank name"
+  			android:textSize="25sp"
+  			android:textColor="?attr/bankTextColor"
+  			android:textStyle="bold"/> 
+         
+        <TextView
+   			android:layout_width="wrap_content"  
+   			android:layout_height="match_parent"  
+   			android:layout_marginLeft="5dip"
+   			android:layout_marginRight="5dip"
+   			android:layout_marginTop="5dip"
+   			android:layout_marginBottom="5dip"
+   			android:singleLine="true"
+			android:ellipsize="end" 
+   			android:id="@+id/bankinfo_desc"  
+   			android:text="bank dec"
+  			android:textSize="15sp"
+  			android:textColor="?attr/bankTextColor"
+  			android:textStyle="bold"/> 
+    	</LinearLayout>
+    
+    	
+    
+    </LinearLayout>
+    
+</LinearLayout>

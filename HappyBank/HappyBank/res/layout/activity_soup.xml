@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="?attr/backgoundColor">
+
+   <RelativeLayout
+        android:id="@+id/main_tab_banner"
+        android:layout_width="fill_parent"
+         android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/setting_titlebar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip" >
+
+        <LinearLayout
+        android:id="@+id/title_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        
+        <ImageButton
+          android:layout_width="20dip"
+          android:layout_height="25dip"
+          android:scaleType="fitXY"
+          android:paddingLeft="10dip"
+          android:background="@null"
+          android:src="@drawable/setting_back" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="20sp" /> 
+   		</LinearLayout>
+
+        <Button
+            android:id="@+id/soup_btn_getsoup"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@null"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="获得"/>
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="#ffffff"
+            android:layout_toLeftOf="@id/soup_btn_getsoup"
+            />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/soup_tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/main_tab"
+        android:layout_below="@id/main_tab_banner"
+        android:orientation="horizontal" >
+
+        <!-- ListView控件 -->
+
+        <ListView
+            android:id="@+id/soupinfo_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

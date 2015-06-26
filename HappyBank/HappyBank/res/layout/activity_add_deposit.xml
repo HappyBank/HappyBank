@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgoundColor" >
+
+    <RelativeLayout
+        android:id="@+id/newdeposit_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/setting_titlebar"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/adddeposit_title_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="20dip"
+                android:layout_height="25dip"
+                android:background="@null"
+                android:paddingLeft="10dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/adddeposit_title_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center"
+            android:text="新建存款"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        
+        <Button
+            android:id="@+id/adddeposit_title_btn_save"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@null"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="保存"/>
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="#ffffff"
+            android:layout_toLeftOf="@id/adddeposit_title_btn_save"
+            />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newdeposit_titlebar"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/adddeposit_content_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="13dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="存款名称"
+            android:inputType="text"
+            android:maxLength="18"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textColor="?attr/bankTextColor"
+            android:textSize="18sp" >
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="#969696" >
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/adddeposit_content_rg_mood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:contentDescription="心情等级"
+            android:orientation="horizontal"
+            android:textColor="?attr/bankTextColor" >
+
+            <RadioButton
+                android:id="@+id/adddeposit_content_rg_mood_happy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textSize="15sp"
+                android:text="开心"
+                android:textColor="?attr/bankTextColor" />
+
+            <RadioButton
+                android:layout_marginLeft="50dip"
+                android:id="@+id/adddeposit_content_rg_mood_unhappy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="伤心"
+                android:textColor="?attr/bankTextColor" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/adddeposit_content_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="存款内容"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            android:minLines="4"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:scrollbars="vertical"
+            android:textColor="?attr/bankTextColor" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="100dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:background="#969696" >
+        </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@null" >
+            
+        <Button
+            android:id="@+id/adddeposit_content_btn_camera"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="照相"
+            android:background="@null"
+            android:textColor="?attr/bankTextColor"
+            android:textSize="15sp" />
+        
+        <LinearLayout
+            android:id="@+id/adddeposit_btn_split"
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_toLeftOf="@id/adddeposit_content_btn_camera"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:background="#969696" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/adddeposit_content_btn_photo"
+            android:layout_toLeftOf="@id/adddeposit_btn_split"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="图片"
+            android:background="@null"
+            android:textColor="?attr/bankTextColor"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/adddeposit_content_image_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

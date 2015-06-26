@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="?attr/backgoundColor">
+
+    <LinearLayout
+        android:id="@+id/main_tab_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/setting_titlebar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:weightSum="1.0">
+
+        <LinearLayout
+       	 	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:gravity="center"
+        	android:paddingTop="5dip"
+        	android:paddingBottom="5dip"
+        	android:orientation="vertical"
+        	android:layout_weight=".10">
+        <android.widget.ImageButton
+            android:id="@+id/image_btn_music"
+            android:scaleType="fitXY"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_music_on" 
+            />
+        </LinearLayout>
+        
+        <LinearLayout
+       	 	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:gravity="center"
+        	android:paddingTop="5dip"
+        	android:paddingBottom="5dip"
+        	android:paddingRight="5dip"
+        	android:orientation="horizontal"
+        	android:layout_weight=".10">
+            
+            <TextView 
+                android:id="@+id/show_user_happybi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:text="所有银行"
+                />
+         </LinearLayout>
+        
+        <LinearLayout
+       	 	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:gravity="center"
+        	android:paddingTop="5dip"
+        	android:paddingBottom="5dip"
+        	android:paddingLeft="5dip"
+        	android:paddingRight="5dip"
+        	android:orientation="horizontal"
+        	android:layout_weight=".60">
+            
+            <TextView 
+                android:id="@+id/show_user_happybi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_gravity="right"
+                android:textColor="#ffffff"
+                />
+         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_view_bt_searchbank"
+       	 	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:gravity="center"
+        	android:paddingTop="5dip"
+        	android:paddingBottom="5dip"
+        	android:paddingLeft="5dip"
+        	android:paddingRight="5dip"
+        	android:orientation="vertical"
+        	android:layout_weight=".10">
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:background="@drawable/search_back_pic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_newbank"
+       	 	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:gravity="center"
+        	android:paddingTop="5dip"
+        	android:paddingBottom="5dip"
+        	android:orientation="vertical"
+        	android:layout_weight=".10">
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:scaleType="fitXY"
+            android:background="@drawable/new_back_add"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/main_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <!-- 内容 -->
+		<LinearLayout
+        android:id="@+id/button_mood"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:orientation="vertical"
+        android:layout_weight=".30">
+        
+		<ImageView
+		    android:layout_width="35dip"
+            android:layout_height="30dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/mood_button_pic"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="3dip"
+            android:text="心情统计" 
+            android:textSize="12sp"
+            android:textColor="#ADADAD"/>
+        </LinearLayout>
+        
+		<LinearLayout
+        android:id="@+id/button_soup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:orientation="vertical"
+        android:layout_weight=".30">
+        
+		<ImageView
+			android:layout_width="35dip"
+       	 	android:layout_height="30dip"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/soup_button_pic"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="3dip"
+            android:text="心灵鸡汤" 
+            android:textSize="12sp"
+            android:textColor="#ADADAD"/>
+        </LinearLayout>
+        
+		<LinearLayout
+        android:id="@+id/button_set"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:orientation="vertical"
+        android:layout_weight=".30">
+        
+        <ImageView
+		    android:layout_width="35dip"
+            android:layout_height="30dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/set_button_pic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="3dip"
+            android:text=" 设置  " 
+            android:textSize="12sp"
+            android:textColor="#ADADAD"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/main_tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:paddingRight="5dip"
+        android:layout_above="@id/main_tab"
+        android:layout_below="@id/main_tab_banner"
+        android:orientation="vertical" >
+        
+        <!-- ListView控件 -->
+
+        <ListView
+            android:id="@+id/bankinfo_listView"
+            android:divider="?attr/bankTextColor"
+            android:dividerHeight="1dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_above="@id/main_tab"
+        android:layout_width="fill_parent"  
+   		android:layout_height="1dip" 
+   		android:background="#ADADAD">
+    </LinearLayout>
+    
+</RelativeLayout>
